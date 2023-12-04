@@ -8,3 +8,4 @@ lazy val commonSettings = Def.settings(
 lazy val common = project.settings(commonSettings)
 lazy val task01 = project.settings(commonSettings).dependsOn(common)
 lazy val task02 = project.settings(commonSettings).dependsOn(common)
+lazy val task03 = project.settings(commonSettings).dependsOn(common)
