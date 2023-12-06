@@ -91,7 +91,7 @@ def part1(input: String): Long =
   calculate(seeds, maps)
 
 def part2(input: String): Long =
-  def calculate(seeds: Seq[Resource], maps: Seq[ResourceMap]): Long = {
+  def calculate(seeds: Seq[Resource], maps: Seq[ResourceMap]): Long =
     def inner(resource: Resource): Seq[Resource] =
       maps.find(_.from == resource.`type`) match {
         case Some(map) => map.findDestinationResource(resource).flatMap {
@@ -102,7 +102,6 @@ def part2(input: String): Long =
       }
 
     seeds.flatMap(inner).minBy(_.start).start
-  }
 
   val lines = input.linesIterator.toSeq
   val seeds = lines.headOption.map(Resource.parseSeeds).getOrElse(Seq.empty)
