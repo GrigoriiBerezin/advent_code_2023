@@ -1,8 +1,6 @@
 import ZioImplicits.ZioOps
 import zio._
 
-import scala.annotation.tailrec
-
 object Task05_02 extends ZIOAppDefault with ReadFileSuite {
   override def run: ZIO[Any with ZIOAppArgs with Scope, Any, Any] =
     for {
