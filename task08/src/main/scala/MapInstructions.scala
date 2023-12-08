@@ -13,12 +13,12 @@ final case class MapInstructions(instructions: Map[String, PathWay]) {
       }
     }
 
-    @annotation.tailrec
-    def gdc(a: BigInt, b: BigInt): BigInt =
-      if (b == 0) a else gdc(b, a % b)
+    @tailrec
+    def gdc(x: BigInt, y: BigInt): BigInt =
+      if (y == 0) x else gdc(y, x % y)
 
-    def lcm(a: BigInt, b: BigInt): BigInt =
-      (a * b) / gdc(a, b)
+    def lcm(x: BigInt, y: BigInt): BigInt =
+      (x * y) / gdc(x, y)
 
     instructions.keys
       .view
