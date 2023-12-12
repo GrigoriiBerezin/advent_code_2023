@@ -21,4 +21,5 @@ lazy val task06 = project.settings(commonSettings).dependsOn(common)
 lazy val task07 = project.settings(commonSettings).dependsOn(common)
 lazy val task08 = project.settings(commonSettings).dependsOn(common)
 lazy val task09 = project.settings(commonSettings).dependsOn(common)
-lazy val task10 = project.settings(commonSettings).dependsOn(common)
+lazy val task10 = project.settings(commonSettings).dependsOn(common) // redo
+lazy val task11 = project.settings(commonSettings).dependsOn(common)
