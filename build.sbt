@@ -28,3 +28,4 @@ lazy val task13 = project.settings(commonSettings).dependsOn(common)
 lazy val task14 = project.settings(commonSettings).dependsOn(common) // refactor cycle movements
 lazy val task15 = project.settings(commonSettings).dependsOn(common)
 lazy val task16 = project.settings(commonSettings).dependsOn(common)
+lazy val task19 = project.settings(commonSettings).dependsOn(common) // refactor me plz
